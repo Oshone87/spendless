@@ -1,0 +1,177 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* Product Section Styles */
+.container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.product-card {
+    width: calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.shop-now-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.about {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+form {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+label, input, textarea {
+    display: flex;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media ( max-width: 600px){
+    .product{display: inline;}
+    .product-card{width: fit-content;}
+}
